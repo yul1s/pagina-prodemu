@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <title>JannyCreating</title>
+    <script src="https://kit.fontawesome.com/3782bacf55.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--barra navegador-->
+    <nav class="navegador">
+        <div class="log-in">
+            <dialog id="modal">
+                <div class="login-container">
+                    <h2>Inicia Sesión</h2>
+                    <form id="login-form" onsubmit="validateLogin(event)">
+                        <div class="form-group">
+                            <label for="username">Nombre de Usuario:</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña:</label>
+                            <input type="password" id="password" name="password" required>
+                            <a href="signup.html">¿No tiene cuenta? Registrese</a>
+                        </div>
+                        <button type="submit">Iniciar</button>
+                    </form>
+                    <p id="error-message" class="error-message"></p>
+                    <button id="cerrar-modal">No, gracias</button>
+                </div>
+            </dialog>
+        </div>
+
+        <ul>
+            <li>
+                <div class="login-button">
+                    <button type="button" id="abrir-modal" class="btn btn-primary"><i class="fa-solid fa-user"></i>Login</button>
+                </div>
+            </li>
+            <li>
+                <nav class="searching">
+                    <div class="container-fluid">
+                        <form id="formu" class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="   Buscar productos" aria-label="Buscar">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </nav>
+            </li>
+
+            <li class="select"><a href="#sobre-mi">Sobre Mi</a></li>
+            <li class="select"><a href="Contacto.html">Contacto</a></li>
+            <li class="select"><a href="Carrito.html">Carrito</a></li>
+        </ul>
+
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png" width="224px"/></a>
+        </div>
+    </nav>
+
+    <!--Seccion insentivar catalogo-->
+    <div class="acc-catal">
+        <span class="title">
+            <h1>Tu destino creativo <br> en un solo catálogo</h1>
+        </span>
+        <span class="desc">
+            <p>Ve muchas posibilidades de productos <br> disponibles en nuestro catálogo</p>
+            <button><a href="Carrito.html">Catálogo</a></button>
+        </span>
+    </div>
+
+
+    <!--carrusel-->
+    <section class="roll">
+        <div class="container">
+  
+            <ul class="slider">
+                <li id="slide1">
+                    <img src="img/llavero-trenza.jpeg">
+                </li>
+                <li id="slide2">
+                    <img src="img/pedido-grande.jpg"/>
+                </li>
+                <li id="slide3">
+                    <img src="img/monederos.jpg"/>
+                </li>
+            </ul>
+            
+            <ul class="menu">
+                <li>
+                    <a href="#slide1">1</a>
+                </li>
+                <li>
+                    <a href="#slide2">2</a>
+                </li>
+                <li>
+                    <a href="#slide3">3</a>
+                </li>
+            </ul>
+            
+          </div>
+    </section>
+
+    <!--Sección Sobre mi-->
+    <section id="sobre-mi">
+        <div class="photo-aboutme">
+            <img src="img/about-me.jpg" width="450px"/>
+        </div>
+        <div class="descr">
+            <h3>Sobre mi</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi<br> ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur<br>
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua. Ut enim ad 
+                minim veniam, quis nostrud <br>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute <br>irure dolor in reprehenderit in voluptate velit esse cillum <br>dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident,<br> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+    <footer>
+        <p><i class="fa-regular fa-copyright">2024 Artesanias. Janny.</i></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

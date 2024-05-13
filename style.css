@@ -1,0 +1,512 @@
+html{
+    box-sizing: border-box;
+    background: linear-gradient(#ac9eec, #f7b7a8);
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0%;
+}
+
+/*navegador menu*/
+.login-button{
+    display: inline-block;
+    width: 15px;
+    padding-right: 20px;
+}
+
+
+#logo{
+    margin-top: 27px;
+    margin-bottom: 7px;
+    float: right;
+}
+
+.d-flex{
+    padding: 5px;
+}
+
+.select a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color:#201261;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease;
+}
+
+.navegador{
+    padding: 14px;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    margin-left: 25px;
+}
+
+.navegador ul{
+    list-style-type: none;
+    margin: 0px;
+    overflow: hidden;
+    display: inline-block;
+    width: 70%;
+}
+
+.select a:hover{
+    color: rgba(255, 178, 182, 0.7);
+    font-size: 20px;
+}
+
+.navegador li{
+    float: left;
+    padding: 25px;
+}
+
+
+button:hover{
+    background-color:#0c042e;
+    color:#fff;
+}
+
+.searching{
+	margin-right: 20px;
+}
+
+button{
+    border-radius: 15px;
+    padding: 8px 20px;
+    background-color: #201261;
+    color:#fff;
+    border-style: none;
+    cursor: pointer;
+}
+
+.searching input{
+    border-radius: 15px;
+    border-color: #fff;
+    border-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*acceso catalogo titulo*/
+.acc-catal{
+    display: inline-block;
+    height: 50%;
+    
+}
+
+.title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 43px;
+    font-style: italic;
+    display: inline-block;
+    text-align: left;
+    width: auto;
+    color:#201261;
+    margin-right: 150px;
+    margin-left: 190px;
+}
+
+.desc{
+    padding: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    text-align: right;
+    font-size: 24px;
+    color:#201261;
+    margin-left: 50px;
+}
+.desc p{
+    font-weight: lighter;
+}
+
+.desc button{
+    background-color: #201261;
+    padding: 10px 35px 10px 35px;
+    border-radius: 12px;
+}
+
+.desc a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.desc button:hover{
+    background-color: #0c042e;
+}
+
+.desc a:hover{
+    text-decoration: underline;
+}
+
+/*carrusel*/
+.container{
+    margin: auto;
+    background-color: none;
+    width: 800px;
+    padding: 30px;
+
+}
+  
+.container ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+  
+ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+  
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+  
+ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+  
+ul.slider li:first-child {
+    opacity: 1;
+}
+  
+ul.slider li:target {
+    opacity: 1;
+}
+  
+.menu{
+    text-align: center;
+    margin: 20px;
+}
+  
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+  
+.menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 2px;
+    width: 9px;
+    height: 9px;
+    font-size: 9px;
+    border-radius: 100%;
+}
+
+.roll{
+    padding: 27px;
+}
+
+/*sobre mi seccion*/
+#sobre-mi{
+    margin-top: 250px;
+}
+
+.photo-aboutme{
+    margin-left: 130px;
+    display: inline-block;
+}
+
+.descr{
+    padding: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 24px;
+    color:#201261;
+    float: right;
+    margin-right: 130px;
+}
+
+.descr h3{
+    font-size: 53px;
+    display: inline-block;
+}
+
+/*HTML CONTACTO*/
+.form{
+    min-width: 650px;
+    margin: 75px;
+    padding: 25px 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #666;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #e28a61;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #a85c39;
+}
+
+.parrafo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    float: right;
+    margin-right: 65px;
+    margin-top: 80px;
+    margin-bottom: 43px;
+    grid-column: 2;
+    color: #201261;
+}
+
+.parrafo h1{
+    font-weight: bold;
+    font-size: 45px;
+    color: #201261;
+}
+
+.negrita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+    color:#201261;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    margin-left: 75px;
+    margin-top: 56px;
+}
+
+.form {
+    grid-column: 1;
+}
+
+.parrafo h1 {
+    margin-top: 0;
+}
+
+.parrafo p {
+    line-height: 1.6;
+}
+
+.first{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: #31241E;
+}
+
+.second{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: #31241E;
+}
+
+.email{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 17px;
+}
+
+.celular{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 17px;
+}
+
+#enviarBtn {
+    background-color: #ac9eec;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#enviarBtn:hover {
+    background-color: #090909;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    margin-top: 65px;
+    background-color: #ffffff;
+    padding: 45px 0;
+}
+
+/*HTML CARRITO DE COMPRAS*/
+.encabezado {
+    color:#201261;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 12px;
+}
+
+hr{
+   margin-bottom: 25px; 
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#productos, #carrito {
+    width: 45%;
+}
+
+#productos h2, p{
+    color:#201261;
+}
+
+.producto {
+    border: 1px solid #080808;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.producto img {
+    width: 25%;
+}
+
+
+#carrito {
+    text-align: center;
+}
+
+#carrito ul {
+    list-style: none;
+    padding: 0;
+}
+
+#carrito li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+#carrito h2, p{
+    color:#201261;
+}
+
+#carrito button {
+    margin-top: 10px;
+}
+
+/*Login*/
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.login-container h2{
+    margin-top: 0;
+    text-align: center;
+    color:#201261;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    color:#201261;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 98%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 7px;
+}
+
+.error-message {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-group a{
+    color:#201261;
+    text-decoration: none;
+}
+
+.form-group a:hover{
+    text-decoration: underline;
+    color:#d4a8f7;
+}
+
+/*Registro*/
+.container-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 310px;
+    margin-top: 100px;
+}
+
+.container-signup h2{
+    text-align: center;
+    color:#201261;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+#registrationForm {
+    min-width: 350px;
+    padding: 20px 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-form {
+    margin-top: 20px;
+}
